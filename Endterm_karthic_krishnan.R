@@ -1,4 +1,5 @@
 #running required packages
+## Score 36/10-deepankar
 library(rpart)
 library(caret)
 library(rattle)
@@ -100,6 +101,9 @@ lens=lens[-1]
 str(lens)
 View(lens)
 
+## Question1 Correct 10/10
+
+
 #q.2.a
 #converting to factors
 lens$age <- as.factor(lens$age)
@@ -154,7 +158,7 @@ mean(test$class != pred_class)
 
 #q.2.g
 #error rates are more in train. recommendation is to collect bigger sample size to have proper distribution and derive better accuracy.
-
+## Correct 10/10
 #q.3
 #load the data
 foodcon <- read.csv("foodcon10.csv",stringsAsFactors = F )
@@ -219,6 +223,7 @@ plot(pve , xlab=" Principal Component ", ylab= "Proportion of
 plot(cumsum (pve), xlab="Principal Component", ylab ="Cumulative Proportion of Variance Explained", ylim=c(0,1) ,
      type='b')
 
+## PC1 and PC2 are not named 8/10
 #q4
 # define the filename
 irisfile <- iris
@@ -317,6 +322,7 @@ confusionMatrix(predictions, validation$Species)
 
 
 
-
+## plot of LD1 vs LD2 and Species not done
+##8/10
 
 
