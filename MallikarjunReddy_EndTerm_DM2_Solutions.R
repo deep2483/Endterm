@@ -1,7 +1,7 @@
 
 
 ####   End Term DM2 _ Solution Script __ MallikarjunReddy __RollNo D1600_23rd Dec,2016  ######
-
+Score 33/40
 
 getwd()
 
@@ -72,6 +72,9 @@ lens=lens[lens$astigmatic!="g",]
 
 lens=lens[-1]
 
+
+## Correct 10/10
+
 ###  Question 2:-  ####
 ##loading tree package from library 
 library(tree)
@@ -121,6 +124,9 @@ mean(Test$class != pred_class)
 #Solution for Questio2 H :-
 
 ##The mer is worse on the test set because the model is not good. 
+
+
+## How will you improve no answered 8/10
 
 ##Question 3:-
 
@@ -175,6 +181,7 @@ pca_food$rotation
 ## Principa; component 2 :-is more of   coffee, bread , youghart-Breakfast iteams 
 ##It can be  named  as "Breakfast iteams "
 
+## Correct 10/10
 
 ##Question 4:-
 
@@ -282,3 +289,6 @@ confusionMatrix(predictions, validation$Species)
 #Detection Rate              0.3333            0.3333           0.3333
 #Detection Prevalence        0.3333            0.3333           0.3333
 #Balanced Accuracy           1.0000            1.0000           1.0000
+
+
+## Correct solution but this is copied from interent 5/10
