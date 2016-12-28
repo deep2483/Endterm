@@ -225,3 +225,4 @@ lda.pred$posterior
 summary(lda.pred$posterior)
 
 ## Correct Great Work Total Score 39/40
+## The plots were good
