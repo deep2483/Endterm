@@ -3,16 +3,16 @@
 
 ####Q1
 
-##A)
-setwd("C:/Users/Avinashh/Desktop/")
+##A)## Correct
+setwd("C:/Users/Avinashh/Desktop/") 
 lens<-read.csv("lens.csv",header = F,stringsAsFactors = T)
-str(lens)
+str(lens) 
 
-##B)
+##B) ## Correct
 colnames(lens)=c('Index','Age','Spec_pres','Astigamatic','TPR','Class')
 str(lens)
 
-##C)
+##C)## Correct
 lens$Age[lens$Age=="1"]="Young"
 lens$Age[lens$Age=="2"]="pre_pres"
 lens$Age[lens$Age=="3"]="pres"
@@ -20,20 +20,20 @@ lens$Age[lens$Age=="3"]="pres"
 lens$Spec_pres[lens$Spec_pres=="1"]="myope"
 lens$Spec_pres[lens$Spec_pres=="2"]="normal"
 
-##D)
+##D) ## Correct
 str(lens)
 lens$Astigamatic=as.character(lens$Astigamatic)
 
-##E)
+##E) ## Correct
 lens$Astigamatic[lens$Astigamatic=="1"]="no"
 lens$Astigamatic[lens$Astigamatic=="2"]="yes"
 
-##F and G)
+##F and G) ## Correct
 lens$TPR[lens$TPR==1]="reduced"
 lens$TPR[lens$TPR==2]="normal"
 str(lens)
 
-##H)
+##H) ## Correct
 table(lens$Index)
 table(lens$Age)
 table(lens$Spec_pres)
@@ -41,16 +41,16 @@ table(lens$Astigamatic)
 table(lens$TPR)
 table(lens$Class)
 
-##I)
+##I) ## Correct
 lens<-lens[c(-11),]
 View(lens)
 
-##J)
+##J) ## Correct
 lens<-lens[-1]
 
 #################################################################
 
-###Q2
+###Q2 ## Correct
 library(tree)
 lens$Class<-as.factor(lens$Class)
 lens$Age<-as.factor(lens$Age)
@@ -59,21 +59,21 @@ lens$Astigamatic<-as.factor(lens$Astigamatic)
 lens$TPR<-as.factor(lens$TPR)
 str(lens)
 
-##A)
+##A) ## Correct
 library(caret)
 set.seed(7)
 intrain <- createDataPartition(y = lens$Class,p=0.70,list=F)
 training<-lens[intrain,]
 testing<-lens[-intrain,]
 
-##B)
+##B) ## Correct
 model1<-tree(Class~.,data = training)
 
-##C)
+##C) ## Correct
 plot(model1)
 text(model1,pretty=0)
 
-##D and E)
+##D and E) ## Correct
 pred_class<-predict(model1 ,testing,type ="class")
 table(pred_class ,testing$Class)
 
@@ -83,21 +83,22 @@ table(pred_class ,testing$Class)
 #2 0 1 0
 #3 0 0 4
 
-##F)
+##F) ## Correct
 summary(model1)
 ## Misclassification error rate: 0.1765 = 3 / 17
 
-##G)
+##G) ## Correct
 mean(testing$Class != pred_class)
 ## Misclassification error rate: 0
 
-##H)
+##H) ## Techniques such as random forest can better be used as the test sample here is quite small
 #Since all actual are predicting well in test data we have error rate as 0
 #But in train data it seemed to be not that worse
 
 ################################################################################
 
-##Q3
+## Ques1 - 10/10 ## Ques2- 9/10
+##Q3 ## Correct 10/10
 food<-lens<-read.csv("food1.csv",header = T, stringsAsFactors =  F)
 str(food)
 dim(food)
@@ -223,4 +224,4 @@ mean(iris_new$Species!=lda.class)
 lda.pred$posterior 
 summary(lda.pred$posterior)
 
-
+## Correct Great Work Total Score 39/40
