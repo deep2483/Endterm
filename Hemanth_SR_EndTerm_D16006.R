@@ -1,3 +1,5 @@
+
+## Score 40/40
 setwd("C:/Users/User/Desktop/DM2-EndTerm/Question")
 
 ##### Q.1 #########
@@ -45,6 +47,7 @@ lens<-lens[-(lens$astigmati=='g'),]
 lens<-lens[,-1]
 str(lens)
 
+## Correct 10/10
 
 ######## Q.2 ########
 
@@ -94,6 +97,7 @@ summary(model1) #### Misclassification error rate: 0.1765 = 3 / 17####
 MER<-mean(test$class!=pred_class)
 MER 
 
+
 # ###############comparion of Misclassification error rate ##############################
 # MER is zero in test data and 0.17 in train data. model is very good in test data      #
 # but small error  in train data. Possibilty of classifying a not required lens category#
@@ -103,7 +107,7 @@ MER
 
 
 
-
+### Correct 10/10
 
 ######## Q.3 ########
 
@@ -156,7 +160,7 @@ pr.food$rotation
 # PC2 talks more abt butter,jam - bread lovers
 # PC3 talks abtmargarine butter, oranges- food lovers
 
-
+## Correct 10/10
 
 
 ###### Q.4 #######
@@ -226,5 +230,5 @@ table(irislda.class,iris.test$Species)
 mean(irislda.class==iris.test$Species)
 # Misclassification Error  =  0.8444444
 
-
+## Correct 10/10  
                   ###########################################################
