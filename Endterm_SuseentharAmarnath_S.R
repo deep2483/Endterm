@@ -2,6 +2,7 @@
 #                   Question 1                             #
 ############################################################
 
+## Score 36/40
 # A. importing csv file
 
 lens <- read.csv("lense1.csv", header = F)
@@ -63,7 +64,7 @@ lens=lens[-1]
 
 lens$index <- NULL
 
-
+## Correct 10/10
 ############################################################
 #                   Question 2                             #
 ############################################################
@@ -120,7 +121,7 @@ summary(tree.basic)
 
 mean(test$class!=pred_class)
 
-
+## No Explanation given for misclassification rate no values printed and how the solution can be improved 6/10
 ############################################################
 #                   Question 3                             #
 ############################################################
@@ -173,7 +174,7 @@ food.out$rotation
 # PC2 talks more about Instant.coffee,Powder.soup,Crisp.bread
 # so they can be tagged "Coffe soup"
 
-
+## 10/10
 ############################################################
 #                   Question 4                             #
 ############################################################
@@ -252,3 +253,5 @@ table(lda.class,iris$Species)
 
 # Misclassification error rate
 mean(iris$Species!=lda.class)
+
+ ## Correct 10/10
