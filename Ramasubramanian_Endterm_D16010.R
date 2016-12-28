@@ -84,7 +84,7 @@ abline (0,1)
 ##1(H) AND 2(E) AND 2(G) and 2(H)
 table(lenses_test,yhat)
 
-
+## Q2 hasn't been answered based on the question asked Q1-10/10 Q2 6/10
 
 ##Question3
 library(ISLR)
@@ -152,7 +152,7 @@ plot(cumsum (pve), xlab="Principal Component", ylab ="Cumulative Proportion of V
 ##PCA-1(Frozen_foods)
 ##PCA-2(beverages)
 
-
+## Q3 10/10
 
 
 ##Question4
@@ -215,6 +215,7 @@ predictions <- predict(fit.lda, validation)
 confusionMatrix(predictions, validation$Species)
 
 
-
+## Plots not done copied from internet 
+#5/10
 
 
