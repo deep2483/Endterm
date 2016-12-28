@@ -1,4 +1,5 @@
 
+## Score 32/40
 #Question1
 #Importing lens file
 setwd("E:\PRAXISKT\Deepanker 'R'\DM2")
@@ -43,6 +44,7 @@ lens=lens[lens$astigmatic!="g",]
 #j).index column is the 1st column so removing index column
 lens=lens[-1]
 
+## Correct 10/10
 
 #Question:2
 library(ISLR)
@@ -90,7 +92,7 @@ mean(test$Class != pred_class)
 
 #H)Test data set has zero misclassification error rate
 #Train data is having more error rate which is not worth hence we can improve the model by other techniques like bagg
-
+## Correct 10/10
 
 #Q3PCA
 foods<-read.csv("foods.csv",header = F,stringsAsFactors = F)
@@ -105,7 +107,7 @@ names(pr.food)
 pr.food$scale
 pr.food$rotation
 
-
+## Naming of pCA plot of PC1 vs PC2 not done...! 3/10
 #Question:4
 library(MASS)
 library(ROCR)read.csv()
@@ -139,7 +141,7 @@ test <- iris[-train_ind, ]
 lda.fit=lda(data$Species~Sepal.Length+Sepal.Width+Petal.Length+Petal.Width, data=data)
 lda.fit
 
-#plotting the data
+#plotting the data ## this plot is not sufficient
 plot(lda.fit)
 
 #predicing using predict function
@@ -170,8 +172,8 @@ mean(lda.class == test$Species)
 #Posterior probabilities
 View(lda.pred)
 
-#plotting the LD1x LD2X
+#plotting the LD1x LD2X ## COlor by original class was required 
 plot(lda.pred$x)
 
 
-
+##9/10
