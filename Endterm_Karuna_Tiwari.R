@@ -69,7 +69,7 @@ lens=lens[-1]
 str(lens) #check the structure
 View(lens) 
 
-
+## Correct 10/10
 ##################################################################################
 #QUESTION 2
 #Load the tree library and Convert all the features (columns) into factors, including 
@@ -154,6 +154,7 @@ mean(Test$class != pred_class)
 # H.	Compare the two misclassification error rates and determine which is worse and why.
 # How can we improve the model?
 
+## Not answered Total 9/10
 #####################################################################3
 # Question 3
 
@@ -218,6 +219,7 @@ plot(cumsum (pve), xlab="Principal Component", ylab ="Cumulative Proportion of V
 #PC1 -> Tinned Food
 #PC2 -> Frozen Food
 
+## Correct 10/10
 ########################################################333
 # Question 4
 library(MASS)
@@ -261,6 +263,6 @@ ggplot(lda.fit$ scalin, aes(LD1, LD2)) +
 table(lda.class,validation1$Species) # Actual vs Predicted
 mean(lda.class==validation1$Species) # no of times predicted correctly- accuracy
 
-
+## Correct 10/10
            
            
