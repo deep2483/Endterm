@@ -105,7 +105,7 @@ lens=lens[-1]
 ## CHECKING FOR THE CHANGES##
 str(lens)
 
-
+## Correct 10/10
 
 ###############################################################################################
 ## QUESTION.2##                                                                               #
@@ -161,7 +161,8 @@ mean(testing$class != pred_class)
 #Since all actual are predicting well in test data we have error rate as 0
 #But in train data it seemed to be worse and can be improved by bagging
 
-
+## Since the sample here is small bootstrap should have provided better results..
+## 9/10
 
 
 
@@ -216,7 +217,7 @@ pri_food$rotation
 
 ## PC2 TALKS ABOUT Crisp.bread, Instant.coffee , Powder.soup, Frozen.fish SO WE CAN NAME IT AS "INSTANT DRINKS AND FOOD".##
 
-
+## Correct 10/10
 
 
 
@@ -278,7 +279,7 @@ mean(iri_class==iris$Species)
 
 summary(Pred)
 
-
+#Correct 10/10
 
 
 
