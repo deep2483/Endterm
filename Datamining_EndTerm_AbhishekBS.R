@@ -4,6 +4,7 @@
 #                                         #
 ###########################################
 
+## TOTAL SCORE 29/40
 #A.Loading lense table into R
 
 lens<-read.csv('E:/Datamining and R/DM2/Lenses.csv', stringsAsFactors = T, header = F)
@@ -61,6 +62,7 @@ lens$index <- NULL
 
 View(lens)
 
+## Correct 10/10
 ############################################################################################
 
 
@@ -119,6 +121,7 @@ mean(testing$Class != pred_class)
 
 #H. Train Data set has an error rate of 0.176 which is bad compared to testing data as it got 0
 
+## Since the sample we need to bootstrap rather than relying on test sample 9/10
 ############################################################################################
 
 ###############################
@@ -149,6 +152,7 @@ for(i in 1:ncol(food))
 
 View(food)
 
+## PCA questions not answered correctly 0/10
 ############################################################################################
 
 ###############################
@@ -196,5 +200,7 @@ table(iri_class,iris$Species)
 mean(iri_class==iris$Species)
 
 summary(tree.iris1)
+## Correct 10/10
+
 
 ############################################################################################
