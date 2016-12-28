@@ -56,6 +56,7 @@ View(len)
 lenses<-len[-1]
 head(lenses)  
 
+## Correct 10/10
 #Question 2
 library(tree)
 
@@ -101,6 +102,8 @@ summary(pred_class)
 mean(pred_class != testing_data$Class)
 ##Accuracy is 41.6% and misclassification error rate in 58.3% both looks poor and worse
 ##We can improve the model by using C5.0 which has inbuilt boosting or by using Random forest
+## Correct 10/0
+
 
 #Question 3
 
@@ -157,7 +160,7 @@ pr.var
 ##therefore we can consider using the first three pcs.
 ##PC1 NAME- FRESH PRODUCTS, PC2 NAME - OILY Products
 
-
+## Correct 10/10
 
 
 #question 4 
@@ -203,3 +206,5 @@ table(lda.class,test$Species)
 
 mean(lda.class != test$Species)
 #Misclassification error rate <- 0.03
+
+## Correct 10/10
