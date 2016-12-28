@@ -1,6 +1,6 @@
 #End Term
 # Author: Nishanth Rao
-
+## Score 29/40
 #Q.1 
 library(dplyr)
 # A. Reading the csv file into R
@@ -55,6 +55,7 @@ lens1
 lens1 <- lens1[, c("age", "spec_pres", "astigmatic", "tpr", "class")]
 lens1
 
+## Q1 Correct 10/0
 
 #Q2
 #A. 
@@ -128,6 +129,7 @@ test_Error
 # This means that the model is overfit. 
 # We can use bagging , boostng and randomforest to increase the accuracy.
 
+## Correct explanation 10/10
 #Question 3
 
 # Loading the data from csv
@@ -155,6 +157,7 @@ country =row.names(foods)
 
 pr.foods =prcomp(foods , scale =TRUE)
 
+## Other parts not attemepeted 3/10
 #4
 
 library(MASS)
@@ -207,4 +210,4 @@ table(lda.class ,test$Species)
 mean(lda.class == test$Species)
 
 
-
+## Plot of LD1 and LD2 with species not done.  6/10
