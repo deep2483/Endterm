@@ -121,7 +121,7 @@ str(lens) # comparing with original data set
 
 #*************END END END Q1 J *****************************************************************************************************
 
-
+### Q1 10/10
 
 #*************Q2   Start ***********************************************************************************************************
 
@@ -204,7 +204,7 @@ mean(test$class != pred_class)  # value = 0.5714
 #try bagging, boosting or random forest based algorithms to ensure we train the model to
 #include data from all patterns while creating the model and then apply it on test data
 
-
+## Correct 10/10
 # Question 3
 
 # Read data from file and save as food
@@ -277,3 +277,8 @@ head(new)
 # Holland and england show garlic and olive oil....
 #Aimilarly Denmark, Norway, Luxemburg and Germany form a similar cluster while france and Belgium form a similar cluster based on 
 #Principal compoinents.
+
+
+## Great explanation and observation regarding PCA
+
+##10/10
